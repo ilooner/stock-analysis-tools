@@ -7,7 +7,7 @@ import plotly.express as px
 def main(source):
     df = pd.read_csv(source)
     df['timestamp'] = df['timestamp'].transform(lambda ts: pd.to_datetime(ts, unit='ms', origin='unix'))
-    fig = px.line(df, x='timestamp', y="average")
+    fig = px.line(df, x='timestamp', y=["lowestPrice", "average", "highestPrice"])
     fig.show()
 
 if __name__ == "__main__":
