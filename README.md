@@ -1,3 +1,9 @@
+## Usage
+
+```
+python plot_trades.py ~/testKOTrades.csv
+```
+
 ## Dev
 
 ### Update deps
@@ -9,7 +15,7 @@ pip freeze > requirements.txt
 ### Activate Virtual Environment
 
 ```
-https://docs.python-guide.org/dev/virtualenvs/
+source venv/bin/activate
 ```
 
 ### Resources
